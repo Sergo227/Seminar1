@@ -203,7 +203,7 @@ Console.WriteLine(number1);*/
 78 -> третьей цифры нет
 32679 -> 6*/
 
-Console.Write("Введите число: ");
+/*Console.Write("Введите число: ");
 int inputNumber = Convert.ToInt32(Console.ReadLine());
 string inputNumberText = Convert.ToString(inputNumber);
 
@@ -213,4 +213,117 @@ if (inputNumberText.Length > 2)
 }
 else {
   Console.WriteLine("-> третьей цифры нет");
+}*/
+
+//Классная работа
+
+/*Console.Write("Введите координату по оси oX: ");
+int x = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите координату по оси oY: ");
+int y = Convert.ToInt32(Console.ReadLine());
+if (x > 0 && y > 0) Console.WriteLine("I четверть");
+else if (x < 0 && y > 0) Console.WriteLine("II четверть");
+else if (x < 0 && y < 0) Console.WriteLine("III четверть");
+else if (x > 0 && y > 0) Console.WriteLine("IV четверть");
+else Console.WriteLine("error 404, quarter not found");*/
+
+//Задача 18.
+
+/*Console.Write("Введите номер четверти: ");
+int numberOfQuarter = Convert.ToInt32(Console.ReadLine());
+
+if (numberOfQuarter == 1) Console.WriteLine("x > 0 && y > 0");
+else if (numberOfQuarter == 2) Console.WriteLine("x < 0 && y > 0");
+else if (numberOfQuarter == 3) Console.WriteLine("x < 0 && y < 0");
+else if (numberOfQuarter == 4) Console.WriteLine("x > 0 && y > 0");
+else Console.WriteLine("error 404, quarter not found");*/
+
+//Задача 21
+
+/*Console.Write("Введите данные значения А по оси oX: ");
+int xA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения А по оси oY: ");
+int yA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения B по оси oX: ");
+int xB = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения B по оси oY: ");
+int yB = Convert.ToInt32(Console.ReadLine());
+
+double distance = Math.Sqrt(Math.Pow((xB - xA),2) + Math.Pow((yB - yA),2));
+
+Console.WriteLine($"Расстояние между точками = {Math.Round(distance,2)}");*/
+
+//Задача 22
+
+/*Console.Write("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Таблица квадратов: ");
+
+int i = 1;
+double result = 0;
+while (i <= N)
+{
+   result = Math.Pow(i,2);
+   i ++;
+   Console.WriteLine(result);
+}*/
+
+/*
+Console.Write("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Таблица квадратов: ");
+for (int i = 1; i <= N; i++) Console.WriteLine(Math.Pow(i,2));*/
+
+// Домашнее задание. Задача 19
+
+
+/*Console.Write("Введите число: ");
+string number = Console.ReadLine();
+
+void InputNumber(string number){
+if (number[0] == number[4] || number[1] == number[3])
+{
+   Console.WriteLine("Число: " + number + "- палиндром");
 }
+else Console.WriteLine("Число: " + number + "- НЕ палиндром");
+}
+
+if (number.Length == 5)
+{InputNumber(number);}
+else Console.WriteLine("Введите пятизначное число");*/
+// Функцию void не показывали на семинаре, но показывали на лекции, немного загуглил про void и получил возвращаемое число.
+
+// Задача 21.
+/*Console.Write("Введите данные значения А по оси X: ");
+int xA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения А по оси Y: ");
+int yA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения А по оси Z: ");
+int zA = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения B по оси X: ");
+int xB = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения B по оси Y: ");
+int yB = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите данные значения B по оси Z: ");
+int zB = Convert.ToInt32(Console.ReadLine());
+
+double distance = Math.Sqrt(Math.Pow((xB - xA),2) + Math.Pow((yB - yA),2) + Math.Pow((zB - zA),2));
+
+Console.WriteLine($"Расстояние между точками = {Math.Round(distance,2)}");*/
+
+// Задача 23
+
+Console.Write("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Таблица кубов: ");
+for (int i = 1; i <= N; i++) Console.WriteLine(Math.Pow(i,3));
